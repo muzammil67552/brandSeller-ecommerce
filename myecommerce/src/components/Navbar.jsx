@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
@@ -30,12 +31,12 @@ const Navbar = () => {
     const navigate = useNavigate();
 
     const Links = [
-        { name: "Home", link: "/" },
-        { name: "Man's", link: "/men" },
-        { name: "Women's", link: "/women" },
-        { name: "Kid's", link: "/kids" },
-        { name: "Brands", link: "/brands" },
-        { name: "Contact", link: "/contact" },
+        { name: "Home", link: "" },
+        { name: "Man's", link: "" },
+        { name: "Women's", link: "" },
+        { name: "Kid's", link: "" },
+        { name: "Brands", link: "" },
+        { name: "Contact", link: "" },
     ];
 
     const handleMenuClick = () => {
@@ -55,8 +56,8 @@ const Navbar = () => {
 
     return (
         <>
-        <div className='shadow-md w-full fixed top-0 left-0 mt-11 z-50'>
-            <div className='md:flex text-center bg-white py-1 md:px-10 px-7 items-center justify-center'>
+        <div className='shadow-md w-full fixed top-0 left-0 mt-11 z-50 flex'>
+            <div className='md:flex text-center bg-white py-1 md:px-10 px-7 items-center justify-center w-full'>
                 <div className='md:flex bg-white py-4'>
                     <span>
                         <img src='/mainlogo.png' className='md:h-14 md:mx-8 mx-4 h-10' alt="logo" />
@@ -102,109 +103,109 @@ const Navbar = () => {
                                         </>
                                     )}
                                     {/* Women Collection Dropdown Menu */}
-{Link.name === "Women's" && (
-    <>
-        <li className='hover:bg-gray-50 text-base border-b m-2'>
-            <NavLink to="/women/women-abaya-collection" onClick={closeMenu}>Women Abaya</NavLink>
-        </li>
-        <li className='hover:bg-gray-50 text-base border-b m-2'>
-            <NavLink to="/women/women-dupatta" onClick={closeMenu}>Women Dupatta</NavLink>
-        </li>
-        <li className='hover:bg-gray-50 text-base border-b m-2'>
-            <NavLink to="/women/wformal" onClick={closeMenu}>Formal Dress</NavLink>
-        </li>
-        <li className='hover:bg-gray-50 text-base border-b m-2'>
-            <NavLink to="/women/women-jeans" onClick={closeMenu}>Women Jeans</NavLink>
-        </li>
-        <li className='hover:bg-gray-50 text-base border-b m-2'>
-            <NavLink to="/women/women-night-suits" onClick={closeMenu}>Women Night Suits</NavLink>
-        </li>
-        <li className='hover:bg-gray-50 text-base border-b m-2'>
-            <NavLink to="/women/women-trouser" onClick={closeMenu}>Women Trouser</NavLink>
-        </li>
-        <li className='hover:bg-gray-50 text-base border-b m-2'>
-            <NavLink to="/women/women-shawls" onClick={closeMenu}>WomenShawls</NavLink>
-        </li>
+                                    {Link.name === "Women's" && (
+                                    <>
+                                        <li className='hover:bg-gray-50 text-base border bg-slate-100s m-2'>
+                                            <NavLink to="/women/women-abaya-collection" onClick={closeMenu}>Women Abaya</NavLink>
+                                        </li>
+                                        <li className='hover:bg-gray-50 text-base border bg-slate-100s m-2'>
+                                            <NavLink to="/women/women-dupatta" onClick={closeMenu}>Women Dupatta</NavLink>
+                                        </li>
+                                        <li className='hover:bg-gray-50 text-base border bg-slate-100s m-2'>
+                                            <NavLink to="/women/wformal" onClick={closeMenu}>Formal Dress</NavLink>
+                                        </li>
+                                        <li className='hover:bg-gray-50 text-base border bg-slate-100s m-2'>
+                                            <NavLink to="/women/women-jeans" onClick={closeMenu}>Women Jeans</NavLink>
+                                        </li>
+                                        <li className='hover:bg-gray-50 text-base border bg-slate-100s m-2'>
+                                            <NavLink to="/women/women-night-suits" onClick={closeMenu}>Women Night Suits</NavLink>
+                                        </li>
+                                        <li className='hover:bg-gray-50 text-base border bg-slate-100s m-2'>
+                                            <NavLink to="/women/women-trouser" onClick={closeMenu}>Women Trouser</NavLink>
+                                        </li>
+                                        <li className='hover:bg-gray-50 text-base border bg-slate-100s m-2'>
+                                            <NavLink to="/women/women-shawls" onClick={closeMenu}>WomenShawls</NavLink>
+                                        </li>
         
-    </>
-)}
-{/* Kid's Collection Menu Of Dropdown  */}
-{Link.name === "Kid's" && (
-    <>   
-        <li className='hover:bg-gray-50 text-base border-b m-2'>
-            <NavLink to="/kid/formal-dress" onClick={closeMenu}>Kid Formal Dress</NavLink>
-        </li>
-        <li className='hover:bg-gray-50 text-base border-b m-2'>
-            <NavLink to="/kid/shirts" onClick={closeMenu}>Kid Shirts</NavLink>
-        </li>
-        <li className='hover:bg-gray-50 text-base border-b m-2'>
-            <NavLink to="/kid/suits" onClick={closeMenu}>Kid Suits</NavLink>
-        </li>
-        <li className='hover:bg-gray-50 text-base border-b m-2'>
-            <NavLink to="/kid/shalwar-kurta" onClick={closeMenu}>Kid Shalwar Kurta</NavLink>
-        </li>
-        <li className='hover:bg-gray-50 text-base border-b m-2'>
-            <NavLink to="/kid/shoes" onClick={closeMenu}>Kid Shoes</NavLink>
-        </li>   
-    </>
-)}
+                                    </>
+                                    )}
+                                      {/* Kid's Collection Menu Of Dropdown  */}
+                                      {Link.name === "Kid's" && (
+                                        <>   
+                                        <li className='hover:bg-gray-50 text-base border bg-slate-100s m-2'>
+                                            <NavLink to="/kid/formal-dress" onClick={closeMenu}>Kid Formal Dress</NavLink>
+                                        </li>
+                                        <li className='hover:bg-gray-50 text-base border bg-slate-100s m-2'>
+                                            <NavLink to="/kid/shirts" onClick={closeMenu}>Kid Shirts</NavLink>
+                                        </li>
+                                        <li className='hover:bg-gray-50 text-base border bg-slate-100s m-2'>
+                                            <NavLink to="/kid/suits" onClick={closeMenu}>Kid Suits</NavLink>
+                                        </li>
+                                        <li className='hover:bg-gray-50 text-base border bg-slate-100s m-2'>
+                                            <NavLink to="/kid/shalwar-kurta" onClick={closeMenu}>Kid Shalwar Kurta</NavLink>
+                                        </li>
+                                        <li className='hover:bg-gray-50 text-base border bg-slate-100s m-2'>
+                                            <NavLink to="/kid/shoes" onClick={closeMenu}>Kid Shoes</NavLink>
+                                        </li>   
+                                    </>
+                                )}
 
-{Link.name === "Brands" && (
-    <>
-        <li className='hover:bg-gray-50 text-base border-b m-2'>
-            <NavLink to="/Branding/brand-alkaram" onClick={closeMenu}>Al Karam</NavLink>
-        </li>
-        <li className='hover:bg-gray-50 text-base border-b m-2'>
-            <NavLink to="/Branding/brand-bonanza" onClick={closeMenu}>Bonanza Satrangi</NavLink>
-        </li>
-        <li className='hover:bg-gray-50 text-base border-b m-2'>
-            <NavLink to="/Branding/brand-dinners" onClick={closeMenu}>Diners Brand</NavLink>
-        </li>
-        <li className='hover:bg-gray-50 text-base border-b m-2'>
-            <NavLink to="/Branding/brand-edenrobe" onClick={closeMenu}>Edenrobe</NavLink>
-        </li>
-        <li className='hover:bg-gray-50 text-base border-b m-2'>
-            <NavLink to="/brands/bGullahmed" onClick={closeMenu}>Gull Ahmed</NavLink>
-        </li>
-        <li className='hover:bg-gray-50 text-base border-b m-2'>
-            <NavLink to="/brands/bJdot" onClick={closeMenu}>J.Dots</NavLink>
-        </li>
-        <li className='hover:bg-gray-50 text-base border-b m-2'>
-            <NavLink to="/brands/bnishat" onClick={closeMenu}>Nishat</NavLink>
-        </li>
-        <li className='hover:bg-gray-50 text-base border-b m-2'>
-            <NavLink to="/brands/sana-safinaz" onClick={closeMenu}>Sana Safinaz</NavLink>
-        </li>
-    </>
-)}
+                                    {Link.name === "Brands" && (
+                                        <>
+                                            <li className='hover:bg-gray-50 text-base border bg-slate-100s m-2'>
+                                                <NavLink to="/Branding/brand-alkaram" onClick={closeMenu}>Al Karam</NavLink>
+                                              </li>
+                                              <li className='hover:bg-gray-50 text-base border bg-slate-100s m-2'>
+                                                <NavLink to="/Branding/brand-bonanza" onClick={closeMenu}>Bonanza Satrangi</NavLink>
+                                              </li>
+                                               <li className='hover:bg-gray-50 text-base border bg-slate-100s m-2'>
+                                                <NavLink to="/Branding/brand-dinners" onClick={closeMenu}>Diners Brand</NavLink>
+                                             </li>
+                                              <li className='hover:bg-gray-50 text-base border bg-slate-100s m-2'>
+                                                <NavLink to="/Branding/brand-edenrobe" onClick={closeMenu}>Edenrobe</NavLink>
+                                            </li>
+                                            <li className='hover:bg-gray-50 text-base border bg-slate-100s m-2'>
+                                                <NavLink to="/brands/bGullahmed" onClick={closeMenu}>Gull Ahmed</NavLink>
+                                            </li>
+                                            <li className='hover:bg-gray-50 text-base border bg-slate-100s m-2'>
+                                                <NavLink to="/brands/bJdot" onClick={closeMenu}>J.Dots</NavLink>
+                                            </li>
+                                            <li className='hover:bg-gray-50 text-base border bg-slate-100s m-2'>
+                                                <NavLink to="/brands/bnishat" onClick={closeMenu}>Nishat</NavLink>
+                                            </li>
+                                            <li className='hover:bg-gray-50 text-base border bg-slate-100s m-2'>
+                                                <NavLink to="/brands/sana-safinaz" onClick={closeMenu}>Sana Safinaz</NavLink>
+                                            </li>
+                                        </>
+                                    )}
                                     {/* Add your dropdown items here */}
                                 </ul>
                             )}
                         </li>
                     ))}
-
-                    {/* Cart & User Icon */}
-                    <li className='md:ml-8 text-xl my-2 md:my-0'>
-                        <NavLink to="/cart" className='text-gray-800 hover:text-gray-400 duration-300 flex items-center justify-center'>
-                            <FaCartArrowDown className='mr- text-4xl' />
-                            {products.length > 0 && (
-                                <span className='bg-red-500 text-white rounded-full px-2 py-1 text-xs ml'>
-                                    {products.length}
-                                </span>
-                            )}
-                        </NavLink>
-                    </li>
-                </ul>
-            </div>
-
-            {/* Registration Section */}
-            <div className='md:flex text-center bg-white md:px-10 px-7 items-center justify-center space-x-4'>
-                <button className='hidden md:block bg-blue-500 text-white py-2 px-5 rounded-md' onClick={openLogin}>
+                        
+                       {/* Registration Section */}
+            <div className='md:flex text-center bg-white md:px-10 px-7 items-center justify-center space-x-4 '>
+                <button className='hidden md:block bg-blue-500 text-white py-3 px-5 rounded-md' onClick={openLogin}>
                     Sign In
                 </button>
-                <button className='hidden md:block bg-green-500 text-white py-2 px-5 rounded-md' onClick={openSignUp}>
+                <button className='hidden md:block bg-green-500 text-white py-3 px-5 rounded-md' onClick={openSignUp}>
                     Register
                 </button>
+               </div>
+        </ul>
+
+                <li className='md:ml-8 text-xl my-2 md:my-0 nb-3 list-none'>
+
+                   <NavLink to="/cart" className='text-gray-800 hover:text-gray-400 duration-300 flex items-center justify-center'>
+                   <FaCartArrowDown className='mr- text-4xl' />
+                    {products.length > 0 && (
+                    <span className='bg-red-500 text-white rounded-full px-2 py-1 text-xs ml'>
+                        {products.length}
+                   </span>
+                       )}
+                 </NavLink>
+                 </li>
             </div>
 
             {/* Modal for Login/Register */}
@@ -217,3 +218,10 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+{/* Cart & User Icon */}
+
+
+
+           
