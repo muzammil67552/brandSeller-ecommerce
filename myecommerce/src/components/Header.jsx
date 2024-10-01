@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 
 const Header = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const content = [
-    '"Elevate your style with our exclusive branded and casual dresses, where tradition meets modern elegance."',
+    'Elevate your style with our exclusive branded and ',
+    'casual dresses, where tradition meets modern elegance.',
     'Shop Now Go To Add To Cart In Website and Explore Your Brands',
     'Email: brandseller277@gmail.com',
     'Contact: 0333-5081913',
@@ -30,7 +31,7 @@ const Header = () => {
   }, [currentSlide, content.length]);
 
   return (
-    <div className="bg-white  border border-gray-300 text-black py-2 sticky top-0 z-50">
+    <div className="bg-white  border border-gray-300 text-black py-2 sticky top-0 z-50 ">
       <div className="relative h-6 overflow-hidden">
         <div
           className="absolute flex transition-transform duration-1000 ease-in-out"

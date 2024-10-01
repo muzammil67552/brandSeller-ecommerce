@@ -95,19 +95,19 @@ const Footer = () => {
                     <span className='md:text-xl'>Brand'Seller terms and Privacy</span>
                     <div className='space-x-8'>
                         <a href="https://www.facebook.com/profile.php?id=61552609697127" target="__jump">
-                        <FaFacebook className='text-teal-500 cursor-pointer inline-flex items-center rounded-full md:text-4xl text-2xl mx-1.5 hover:text-gray-100 hover:bg-teal-500 duration-300 hover:scale-95' />
-                        </a>
-
-                        <a href="" target="__jump">
-                        <FaInstagramSquare className='text-teal-500 cursor-pointer inline-flex items-center rounded-full md:text-4xl text-2xl mx-1.5 hover:text-gray-100 hover:bg-teal-500 duration-300 hover:scale-95' />
+                           <FaFacebook className='text-teal-500 cursor-pointer inline-flex items-center rounded-full md:text-4xl text-2xl mx-1.5 hover:text-gray-100 hover:bg-teal-500 duration-300 hover:scale-95' />
                         </a>
 
                         <a href="https://www.instagram.com/officialbrandseller?utm_source=qr&igsh=MWgwaGZzZ2R6ZXF6dw==" target="__jump">
-                        <FaLinkedin className='text-teal-500 cursor-pointer inline-flex items-center rounded-full md:text-4xl text-2xl mx-1.5 hover:text-gray-100 hover:bg-teal-500 duration-300 hover:scale-95' />
+                           <FaInstagramSquare className='text-teal-500 cursor-pointer inline-flex items-center rounded-full md:text-4xl text-2xl mx-1.5 hover:text-gray-100 hover:bg-teal-500 duration-300 hover:scale-95' />
                         </a>
 
-                        <a href="" target="__jump">
-                        <FaYoutube className='text-teal-500 cursor-pointer inline-flex items-center rounded-full md:text-4xl text-2xl mx-1.5 hover:text-gray-100 hover:bg-teal-500 duration-300 hover:scale-95' />
+                        <a href="https://www.linkedin.com/in/brandseller-undefined-308808299/" target="__jump">
+                           <FaLinkedin className='text-teal-500 cursor-pointer inline-flex items-center rounded-full md:text-4xl text-2xl mx-1.5 hover:text-gray-100 hover:bg-teal-500 duration-300 hover:scale-95' />
+                        </a>
+
+                        <a href="https://www.youtube.com/@Brandseller-q9w" target="__jump">
+                           <FaYoutube className='text-teal-500 cursor-pointer inline-flex items-center rounded-full md:text-4xl text-2xl mx-1.5 hover:text-gray-100 hover:bg-teal-500 duration-300 hover:scale-95' />
                         </a>
                     </div>
                 </div>
