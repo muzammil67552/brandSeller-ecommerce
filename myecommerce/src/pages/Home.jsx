@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
   
 import { FaShoppingCart } from 'react-icons/fa';
 import HoverSlidercart from '../components/HoverSlidercart';
@@ -18,10 +19,8 @@ const Home = () => {
     return (
         <>    
         {/* Main Div */}
-        <div className='mt-40 '>
-            <h1 className='md:text-5xl text-2xl font-bold text-center'>Explore The Brand's And Different Collection</h1>  
-        </div>
-          <div className="container mx-auto p-6 mb-4 mt-10">
+        
+          <div className="container mx-auto p-6 mb-4 mt-32">
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                {/* Left Side: Single Image */}

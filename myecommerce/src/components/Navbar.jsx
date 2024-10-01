@@ -36,7 +36,7 @@ const Navbar = () => {
         { name: "Women's", link: "" },
         { name: "Kid's", link: "" },
         { name: "Brands", link: "" },
-        { name: "Contact", link: "" },
+        
     ];
 
     const handleMenuClick = () => {
@@ -73,7 +73,7 @@ const Navbar = () => {
                         <li key={Link.name} className='md:ml-8 text-xl my-2 md:my-0 relative'>
                             <NavLink
                                 to={Link.link}
-                                onClick={['Home', 'Contact'].includes(Link.name) ? closeMenu : () => toggleDropdown(Link.name)}
+                                onClick={['Home'].includes(Link.name) ? closeMenu : () => toggleDropdown(Link.name)}
                                 className='text-gray-800 hover:text-gray-400 duration-300 flex items-center justify-center'
                             >
                                 {Link.name}
