@@ -81,23 +81,23 @@ const Navbar = () => {
 
                                 {/* Sub-dropdowns */}
                                 {dropdown === Link.name && (
-                                    <ul className='md:absolute left-0  md:right-0 mt-2 bg-slate-50 mx-5 shadow-lg rounded-md  p-4 py-2 md:p-4 w-56 md:text-left text-left'>
+                                    <ul className='md:absolute left-0  md:right-0 mt-2 bg-white   shadow-lg rounded-md   md:px-0 px-10 py-1 md:p-4 md:w-48 w-full md:text-left text-left'>
                                         {Link.name === "Man's" && (
                                             <>
-                                                <li className='hover:bg-gray-1050d:text-xl text-base  w-full  p-2  shadow-sm  md:mx-0  mx-4 m-2 '>
+                                                <li className='hover:bg-gray-50 md:text-xl  text-base shadow-sm  mx-4 m-1'>
                                                     <NavLink to="/men/menscasual" onClick={closeMenu}>Men Casual Wear</NavLink>
                                                 </li>
-                                                <li className='hover:bg-gray-150md:text-xl text-base  w-full  p-2 shadow-sm  md:mx-0  mx-4 m-1'>
+                                                <li className='hover:bg-gray-50 md:text-xl  text-base shadow-sm  mx-4 m-1'>
                                                     <NavLink to="/men/tracksuits" onClick={closeMenu}>Men Tracksuits</NavLink>
                                                 </li>
-                                                <li className='hover:bg-gray-150md:text-xl text-base  w-full  p-2 shadow-sm  md:mx-0  mx-4 m-1'>
+                                                <li className='hover:bg-gray-50 md:text-xl  text-base shadow-sm  mx-4 m-1'>
                                                     <NavLink to="/men/night-suits" onClick={closeMenu}>Men Night Suits</NavLink>
                                                 </li>
-                                                <li className='hover:bg-gray-150md:text-xl text-base  w-full  p-2 shadow-sm  md:mx-0  mx-4 m-1'>
+                                                <li className='hover:bg-gray-50 md:text-xl  text-base shadow-sm  mx-4 m-1'>
                                                     <NavLink to="/men/Formal-dress" onClick={closeMenu}>Formal Dress</NavLink>
                                                 </li>
-                                                <li className='hover:bg-gray-150md:text-xl text-base  w-full  p-2 shadow-sm  md:mx-0  mx-4 m-1'>
-                                                    <NavLink to="/men/Mens-shalwarKurta" onClick={closeMenu}>Shalwar Kameez</NavLink>
+                                                <li className='hover:bg-gray-50 md:text-xl  text-base shadow-sm  mx-4 m-1'>
+                                                    <NavLink to="/men/Mens-shalwarKurta" onClick={closeMenu} >Shalwar Kameez</NavLink>
                                                 </li>
                                             </>
                                         )}
@@ -105,25 +105,25 @@ const Navbar = () => {
                                         {/* Women Collection */}
                                         {Link.name === "Women's" && (
                                             <>
-                                                <li className='hover:bg-gray-50 md:text-xl text-base w-full  p-1 shadow-sm  md:mx-0  mx-4 m-1'>
+                                                <li className='hover:bg-gray-50 md:text-xl  text-base shadow-sm  mx-4 m-1 '>
                                                     <NavLink to="/women/women-abaya-collection" onClick={closeMenu}>Women Abaya</NavLink>
                                                 </li>
-                                                <li className='hover:bg-gray-50 md:text-xl text-base w-full  p-1 shadow-sm  md:mx-0  mx-4 m-1'>
+                                                <li className='hover:bg-gray-50 md:text-xl  text-base shadow-sm  mx-4 m-1 '>
                                                     <NavLink to="/women/women-dupatta" onClick={closeMenu}>Women Dupatta</NavLink>
                                                 </li>
-                                                <li className='hover:bg-gray-50 md:text-xl text-base w-full  p-1 shadow-sm  md:mx-0  mx-4 m-1'>
+                                                <li className='hover:bg-gray-50 md:text-xl  text-base shadow-sm  mx-4 m-1 '>
                                                     <NavLink to="/women/wformal" onClick={closeMenu}>Formal Dress</NavLink>
                                                 </li>
-                                                <li className='hover:bg-gray-50 md:text-xl text-base w-full  p-1 shadow-sm  md:mx-0  mx-4 m-1'>
+                                                <li className='hover:bg-gray-50 md:text-xl  text-base shadow-sm  mx-4 m-1 '>
                                                     <NavLink to="/women/women-jeans" onClick={closeMenu}>Women Jeans</NavLink>
                                                 </li>
-                                                <li className='hover:bg-gray-50 md:text-xl text-base w-full  p-1 shadow-sm  md:mx-0  mx-4 m-1'>
+                                                <li className='hover:bg-gray-50 md:text-xl  text-base shadow-sm  mx-4 m-1 '>
                                                     <NavLink to="/women/women-night-suits" onClick={closeMenu}>Women Night Suits</NavLink>
                                                 </li>
-                                                <li className='hover:bg-gray-50 md:text-xl text-base w-full  p-1 shadow-sm  md:mx-0  mx-4 m-1'>
+                                                <li className='hover:bg-gray-50 md:text-xl  text-base shadow-sm  mx-4 m-1 '>
                                                     <NavLink to="/women/women-trouser" onClick={closeMenu}>Women Trouser</NavLink>
                                                 </li>
-                                                 <li className='hover:bg-gray-50 md:text-xl text-base w-full  p-1 shadow-sm  md:mx-0  mx-4 m-1'>
+                                                 <li className='hover:bg-gray-50 md:text-xl  text-base shadow-sm  mx-4 m-1 '>
                                                      <NavLink to="/women/women-shawls" onClick={closeMenu}>WomenShawls</NavLink>
                                                 </li>
                                             </>
@@ -132,19 +132,19 @@ const Navbar = () => {
                                         {/* Kid's Collection */}
                                         {Link.name === "Kid's" && (
                                             <>
-                                                <li className='hover:bg-gray-50 md:text-xl text-base w-full  p-1 shadow-sm  md:mx-0  mx-4 m-1'>
+                                                <li className='hover:bg-gray-50 md:text-xl  text-base shadow-sm  mx-4 m-1 '>
                                                     <NavLink to="/kid/formal-dress" onClick={closeMenu}>Kid Formal Dress</NavLink>
                                                 </li>
-                                                <li className='hover:bg-gray-50 md:text-xl text-base w-full  p-1 shadow-sm  md:mx-0  mx-4 m-1'>
+                                                <li className='hover:bg-gray-50 md:text-xl  text-base shadow-sm  mx-4 m-1 '>
                                                     <NavLink to="/kid/shirts" onClick={closeMenu}>Kid Shirts</NavLink>
                                                 </li>
-                                                <li className='hover:bg-gray-50 md:text-xl text-base w-full  p-1 shadow-sm  md:mx-0  mx-4 m-1'>
+                                                <li className='hover:bg-gray-50 md:text-xl  text-base shadow-sm  mx-4 m-1 '>
                                                     <NavLink to="/kid/suits" onClick={closeMenu}>Kid Suits</NavLink>
                                                 </li>
-                                                <li className='hover:bg-gray-50 md:text-xl text-base w-full  p-1 shadow-sm  md:mx-0  mx-4 m-1'>
+                                                <li className='hover:bg-gray-50 md:text-xl  text-base shadow-sm  mx-4 m-1 '>
                                                     <NavLink to="/kid/shalwar-kurta" onClick={closeMenu}>Kid Shalwar Kurta</NavLink>
                                                 </li>
-                                                <li className='hover:bg-gray-50 text-base border bg-slate-100s m-2'>
+                                                <li className='hover:bg-gray-50 md:text-xl  text-base shadow-sm  mx-4 m-1 '>
                                                   <NavLink to="/kid/shoes" onClick={closeMenu}>Kid Shoes</NavLink>
                                                 </li>   
                                             </>
@@ -153,25 +153,25 @@ const Navbar = () => {
                                         {/* Brands */}
                                         {Link.name === "Brands" && (
                                             <>
-                                                <li className='hover:bg-gray-50 md:text-xl text-base w-full  p-1 shadow-sm  md:mx-0  mx-4 m-1'>
+                                                <li className='hover:bg-gray-50 md:text-xl  text-base shadow-sm  mx-4 m-1 '>
                                                     <NavLink to="/Branding/brand-alkaram" onClick={closeMenu}>Al Karam</NavLink>
                                                 </li>
-                                                <li className='hover:bg-gray-50 md:text-xl text-base w-full  p-1 shadow-sm  md:mx-0  mx-4 m-1'>
+                                                <li className='hover:bg-gray-50 md:text-xl  text-base shadow-sm  mx-4 m-1 '>
                                                     <NavLink to="/Branding/brand-bonanza" onClick={closeMenu}>Bonanza Satrangi</NavLink>
                                                 </li>
-                                                <li className='hover:bg-gray-50 md:text-xl text-base w-full  p-1 shadow-sm  md:mx-0  mx-4 m-1'>
+                                                <li className='hover:bg-gray-50 md:text-xl  text-base shadow-sm  mx-4 m-1 '>
                                                     <NavLink to="/Branding/brand-dinners" onClick={closeMenu}>Diners Brand</NavLink>
                                                 </li>
-                                                <li className='hover:bg-gray-50 md:text-xl text-base w-full  p-1 shadow-sm  md:mx-0  mx-4 m-1'>
+                                                <li className='hover:bg-gray-50 md:text-xl  text-base shadow-sm  mx-4 m-1 '>
                                                     <NavLink to="/Branding/brand-edenrobe" onClick={closeMenu}>Edenrobe</NavLink>
                                                 </li>
-                                                 <li className='hover:bg-gray-50 md:text-xl text-base w-full  p-1 shadow-sm  md:mx-0  mx-4 m-1'>
+                                                 <li className='hover:bg-gray-50 md:text-xl  text-base shadow-sm  mx-4 m-1 '>
                                                     <NavLink to="/brands/bGullahmed" onClick={closeMenu}>Gull Ahmed</NavLink>
                                                  </li>
-                                                 <li className='hover:bg-gray-50 md:text-xl text-base w-full  p-1 shadow-sm  md:mx-0  mx-4 m-1'>
+                                                 <li className='hover:bg-gray-50 md:text-xl  text-base shadow-sm  mx-4 m-1 '>
                                                      <NavLink to="/brands/bJdot" onClick={closeMenu}>J.Dots</NavLink>
                                                  </li>
-                                                 <li className='hover:bg-gray-50 md:text-xl text-base w-full  p-1 shadow-sm  md:mx-0  mx-4 m-1'>
+                                                 <li className='hover:bg-gray-50 md:text-xl  text-base shadow-sm  mx-4 m-1 '>
                                                   <NavLink to="/brands/bnishat" onClick={closeMenu}>Nishat</NavLink>
                                                  </li>
                                                  <li className='hover:bg-gray-50 md:text-xl text-base w-full  p-1 shadow-sm  md:mx-0  mx-4 m-1'>

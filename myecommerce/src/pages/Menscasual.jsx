@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+/* eslint-disable react/no-unescaped-entities */
+import { useEffect } from 'react';
 //import data from asset/productData
 import { Categories, casualData } from '../assets/productData';
 import { setProducts } from '../redux/productSlice';
