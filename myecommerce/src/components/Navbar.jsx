@@ -96,7 +96,7 @@ const Navbar = () => {
                                                 <li className='hover:bg-gray-50 md:text-xl  text-base shadow-sm  mx-4 m-1'>
                                                     <NavLink to="/men/Formal-dress" onClick={closeMenu}>Formal Dress</NavLink>
                                                 </li>
-                                                <li className='hover:bg-gray-50 md:text-xl  text-base shadow-sm  mx-4 m-1'>
+                                                <li className='hover:bg-gray-50 md:text-xl  text-base shadow-sm mx-4 m-1'>
                                                     <NavLink to="/men/Mens-shalwarKurta" onClick={closeMenu} >Shalwar Kameez</NavLink>
                                                 </li>
                                             </>
